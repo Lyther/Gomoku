@@ -47,9 +47,9 @@ def test(unit):
 		print(gobang.earn(board, -1, 8, 9, 15, 0))
 	if unit == 5:
 		board = np.zeros((15, 15), dtype=np.int)
-		board[8, 8] = board[5, 9] = board[9, 5] = board[6, 7] = 1
-		board[7, 7] = board[6, 8] = board[8, 6] = board[5, 7] = board[7, 5] = -1
-		agent = imp.load_source('AI', "gobang.py").AI(15, 1, 5)
+		agent = imp.load_source('AI', "gobang.py").AI(15, -1, 5)
+		board[7, 7] = -1
+		board[8, 8] = 1
 		agent.go(np.copy(board))
 		print(agent.candidate_list[-1])
 

@@ -221,14 +221,14 @@ class AI(object):
 
 		# 白手时的较优策略
 		if len(idx) == 224:
-			if (recent[0]-1, recent[1]) in idx:
-				return (recent[0]-1, recent[1])
-			if (recent[0], recent[1]-1) in idx:
-				return (recent[0], recent[1]-1)
-			if (recent[0]+1, recent[1]) in idx:
-				return (recent[0]+1, recent[1])
-			if (recent[0], recent[1]+1) in idx:
-				return (recent[0], recent[1]+1)
+			if (recent[0]-1, recent[1]-1) in idx:
+				return (recent[0]-1, recent[1]-1)
+			if (recent[0]+1, recent[1]-1) in idx:
+				return (recent[0]+1, recent[1]-1)
+			if (recent[0]+1, recent[1]+1) in idx:
+				return (recent[0]+1, recent[1]+1)
+			if (recent[0]-1, recent[1]+1) in idx:
+				return (recent[0]-1, recent[1]+1)
 
 		# 确定收益最大的点
 		# 后期考虑只计算上一步落子为中心，米字形区域内点的收益
