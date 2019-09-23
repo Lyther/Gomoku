@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b845ce36-98b4-43ff-bf19-ef2da295f9f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tools/reverse_dict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gobang.py" beforeDir="false" afterPath="$PROJECT_DIR$/gobang.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/chess_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tools/chess_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/generate_pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/generate_pass.py" afterDir="false" />
@@ -65,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.reverse_dict">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,20 +145,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prime" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="reverse_dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Reference Materials/Lesson Materials/Computer Networks/Homework/Assignment 2" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Reference Materials/Lesson Materials/Computer Networks/Homework/Assignment 2/prime.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/reverse_dict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.reverse_dict" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.generate_pass" />
         <item itemvalue="Python.generate_board" />
         <item itemvalue="Python.code_check_test" />
-        <item itemvalue="Python.prime" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +205,7 @@
       <updated>1568003497733</updated>
       <workItem from="1568003509703" duration="6476000" />
       <workItem from="1568121627769" duration="43957000" />
-      <workItem from="1568780976726" duration="58001000" />
+      <workItem from="1568780976726" duration="86819000" />
     </task>
     <servers />
   </component>
@@ -263,11 +260,6 @@
           <url>file://$PROJECT_DIR$/gobang.py</url>
           <line>204</line>
           <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gobang.py</url>
-          <line>752</line>
-          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

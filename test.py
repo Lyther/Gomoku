@@ -52,6 +52,11 @@ def test(unit):
 		board[8, 8] = 1
 		agent.go(np.copy(board))
 		print(agent.candidate_list[-1])
+	if unit == 6:
+		board = np.zeros((15, 15), dtype=np.int)
+		board[7, 7] = -1
+		board[8, 8] = 1
+		print(gobang.hash_board(board))
 
 if __name__ == '__main__':
-	test(5)
+	test(6)

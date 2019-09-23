@@ -11,6 +11,7 @@ def main(my_color):
 	steps = 0
 	global next
 	string = ''
+	print('{', end='')
 	while True:
 		step = f.readline()
 		steps += 1
@@ -20,13 +21,15 @@ def main(my_color):
 		if my_color == 1:
 			if not steps & 1:
 				next = (int(pos[0]), int(pos[1]))
-				string = "'" + gobang.hash_board(board) + "':" + str(next) + ',\n' + string
+				string = string + "'" + gobang.hash_board(board) + "':" + str(next) + ',\n'
 		else:
 			if steps & 1:
 				next = (int(pos[0]), int(pos[1]))
-				string = "'" + gobang.hash_board(board) + "':" + str(next) + ',\n' + string
+				string = string + "'" + gobang.hash_board(board) + "':" + str(next) + ',\n'
 		board[int(pos[0]), int(pos[1])] = pos[2]
-	print(string)
+	string = string[0:-2]
+	print(string, end='')
+	print('},')
 
 
 if __name__ == '__main__':
