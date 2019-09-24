@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b845ce36-98b4-43ff-bf19-ef2da295f9f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tools/reverse_dict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gobang.py" beforeDir="false" afterPath="$PROJECT_DIR$/gobang.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/chess_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tools/chess_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/generate_pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/generate_pass.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +202,7 @@
       <updated>1568003497733</updated>
       <workItem from="1568003509703" duration="6476000" />
       <workItem from="1568121627769" duration="43957000" />
-      <workItem from="1568780976726" duration="86819000" />
+      <workItem from="1568780976726" duration="103795000" />
     </task>
     <servers />
   </component>
