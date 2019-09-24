@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b845ce36-98b4-43ff-bf19-ef2da295f9f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tools/simplifier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_check_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/code_check_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gobang.py" beforeDir="false" afterPath="$PROJECT_DIR$/gobang.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/chess_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tools/chess_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/test" beforeDir="false" afterPath="$PROJECT_DIR$/tools/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/chess_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/generate_pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/generate_pass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/test" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.simplifier">
+  <component name="RunManager" selected="Python.test">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,9 +185,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.simplifier" />
         <item itemvalue="Python.reverse_dict" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.generate_pass" />
         <item itemvalue="Python.generate_board" />
       </list>
@@ -205,7 +205,7 @@
       <updated>1568003497733</updated>
       <workItem from="1568003509703" duration="6476000" />
       <workItem from="1568121627769" duration="43957000" />
-      <workItem from="1568780976726" duration="116532000" />
+      <workItem from="1568780976726" duration="141546000" />
     </task>
     <servers />
   </component>
@@ -247,19 +247,44 @@
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gobang.py</url>
-          <line>226</line>
-          <option name="timeStamp" value="42" />
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gobang.py</url>
-          <line>263</line>
-          <option name="timeStamp" value="43" />
+          <line>2466</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gobang.py</url>
-          <line>204</line>
-          <option name="timeStamp" value="45" />
+          <line>2497</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gobang.py</url>
+          <line>2527</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gobang.py</url>
+          <line>2511</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gobang.py</url>
+          <line>2514</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gobang.py</url>
+          <line>2516</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gobang.py</url>
+          <line>2524</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -270,7 +295,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Gomoku$test.coverage" NAME="test Coverage Results" MODIFIED="1568955785469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Gomoku$test.coverage" NAME="test Coverage Results" MODIFIED="1569350476677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Gomoku$code_check_test.coverage" NAME="code_check_test Coverage Results" MODIFIED="1568791753332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,0 +1,8 @@
+# 黑棋
+IS_BLACK = true;
+IS_CAN_STEP = true;
+socket.emit('self_play', { 'player': 11712606, 'AI': '', 'tag': 1 });
+
+# 白棋
+IS_BLACK = false;
+socket.emit('self_play', { 'player': 11712606, 'AI': '', 'tag': -1 });

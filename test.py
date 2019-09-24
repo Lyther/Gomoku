@@ -57,6 +57,14 @@ def test(unit):
 		board[7, 7] = -1
 		board[8, 8] = 1
 		print(gobang.hash_board(board))
+	if unit == 7:
+		board = np.zeros((15, 15), dtype=np.int)
+		board[7, 6] = board[7, 7] = board[8, 5] = board[9, 7] = -1
+		board[7, 5] = board[8, 6] = board[8, 7] = 1
+		agent = imp.load_source('AI', "gobang.py").AI(15, 1, 5)
+		agent.go(np.copy(board))
+		print(agent.candidate_list[-1])
+
 
 if __name__ == '__main__':
-	test(6)
+	test(7)
