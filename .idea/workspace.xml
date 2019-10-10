@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b845ce36-98b4-43ff-bf19-ef2da295f9f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tools/convert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gobang.py" beforeDir="false" afterPath="$PROJECT_DIR$/gobang.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history/NaiveGomo.py" beforeDir="false" afterPath="$PROJECT_DIR$/history/NaiveGomo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/generate_pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,12 +46,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Documents\Program\Python\Gomoku\history" />
-      <recent name="F:\Documents\Program\Python\Gomoku" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Documents\Program\Python\Gomoku\venv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Documents\Program\Python\Gomoku" />
+      <recent name="F:\Documents\Program\Python\Gomoku\venv" />
+      <recent name="F:\Documents\Program\Python\Gomoku\history" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -61,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.generate">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,17 +90,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generate_board" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="convert" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/generate_board.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/convert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Gomoku" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,32 +138,16 @@
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/generate_pass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="reverse_dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Gomoku" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/reverse_dict.py" />
+      <option name="SCRIPT_NAME" value="F:\Documents\Program\Python\Gomoku\generate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,6 +160,9 @@
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -164,6 +182,9 @@
       <module name="Gomoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -181,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.generate" />
+        <item itemvalue="Python.convert" />
+        <item itemvalue="Python.generate_pass" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.simplifier" />
-        <item itemvalue="Python.reverse_dict" />
-        <item itemvalue="Python.generate_pass" />
-        <item itemvalue="Python.generate_board" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +222,22 @@
       <updated>1568003497733</updated>
       <workItem from="1568003509703" duration="6476000" />
       <workItem from="1568121627769" duration="43957000" />
-      <workItem from="1568780976726" duration="155799000" />
+      <workItem from="1568780976726" duration="160819000" />
+      <workItem from="1569510389383" duration="69000" />
+      <workItem from="1569517878419" duration="5091000" />
+      <workItem from="1569541799294" duration="438000" />
+      <workItem from="1569560840858" duration="1407000" />
+      <workItem from="1569568504091" duration="4477000" />
+      <workItem from="1569575380830" duration="576000" />
+      <workItem from="1569592754774" duration="367000" />
+      <workItem from="1569599796874" duration="3394000" />
+      <workItem from="1569656490400" duration="301000" />
+      <workItem from="1569670079933" duration="391000" />
+      <workItem from="1569710906208" duration="1955000" />
+      <workItem from="1569729409276" duration="613000" />
+      <workItem from="1569730843198" duration="13868000" />
+      <workItem from="1569757777170" duration="9146000" />
+      <workItem from="1570456122537" duration="59000" />
     </task>
     <servers />
   </component>
@@ -213,7 +249,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -238,5 +276,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Gomoku$test.coverage" NAME="test Coverage Results" MODIFIED="1569350476677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Gomoku$code_check_test.coverage" NAME="code_check_test Coverage Results" MODIFIED="1568791753332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Gomoku$generate_pass.coverage" NAME="generate_pass Coverage Results" MODIFIED="1569741083220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
   </component>
 </project>

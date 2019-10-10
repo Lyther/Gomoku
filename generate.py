@@ -34,25 +34,27 @@ def main(my_color):
 
 def insert_gobang(string):
 	buffer = ''
-	f = open('../gobang.py', 'r', encoding='utf-8')
+	f = open('./gobang.py', 'r', encoding='utf-8')
 	content = f.readlines()
 	for i in content:
 		buffer = buffer + i.replace('TABLE = [', 'TABLE = [' + string)
 	f.close()
-	f = open('../gobang.py', 'w', encoding='utf-8')
+	f = open('./gobang.py', 'w', encoding='utf-8')
 	print('Ready to rewrite state machine.')
 	f.write(buffer)
 
-
-# -1表示自己是黑棋，1表示自己是白棋
-if __name__ == '__main__':
+def init():
 	f = open('C:/Users/Enderaoe/Downloads/chess_log.txt', 'r')
 	print('File open success, judging self color...')
 	content = f.readlines()
 	f.close()
-	if content[-1][-2:] == '-1':
+	if content[-1].count('-1'):
 		print('[-1] self color is black, calling state modification function...')
 		main(-1)
 	else:
 		print('[1] self color is white, calling state modification function...')
 		main(1)
+
+# -1表示自己是黑棋，1表示自己是白棋
+if __name__ == '__main__':
+	init()

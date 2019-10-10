@@ -1,12 +1,16 @@
+'''
+白给代码，打谁谁输
+'''
 import numpy as np
+import time
 
 COLOR_BLACK = -1
 COLOR_WHITE = 1
 COLOR_NONE = 0
 DEPTH = 4   # 博弈树搜索的深度
-PRIORITY_BONUS = 1.5  # 自己下子有先手优势，加成倍数
-OBLIQUE_BONUS = 1.5 # 斜向连接比直接连接好，加成倍数
-DIRECT_BONUS = 1.1  # 直接连接比跳子连接好，加成倍数
+PRIORITY_BONUS = 1.2  # 自己下子有先手优势，加成倍数
+OBLIQUE_BONUS = 1 # 斜向连接比直接连接好，加成倍数
+DIRECT_BONUS = 1  # 直接连接比跳子连接好，加成倍数
 
 ONE = 10
 TWO = 100
@@ -167,6 +171,7 @@ class AI(object):
 
 	# The input is current chessboard.
 	def go(self, chessboard):
+
 		self.candidate_list.clear()
 		# 判定下一步落子的位置
 		new_pos = self.next_step(chessboard)
@@ -177,11 +182,15 @@ class AI(object):
 		self.history_board[new_pos[0], new_pos[1]] = self.color
 
 	def next_step(self, chessboard):
+		idx = np.where(chessboard == COLOR_NONE)
+		idx = list(zip(idx[0], idx[1]))
+		# 自杀代码，用来白给
+		steps = 225 - len(idx)
+		if steps == 1 or steps == 2:
+			time.sleep(5)
 		if np.array_equal(self.history_board, chessboard):  # 如果棋盘为空，直接落子中央
 			return (7, 7)
 		# 获取棋盘上空白的位置
-		idx = np.where(chessboard == COLOR_NONE)
-		idx = list(zip(idx[0], idx[1]))
 		# 获取上一步敌人落子的位置
 		idx_recent = np.where(self.history_board == COLOR_NONE)
 		idx_recent = list(zip(idx_recent[0], idx_recent[1]))

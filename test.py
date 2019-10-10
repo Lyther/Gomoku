@@ -64,7 +64,12 @@ def test(unit):
 		agent = imp.load_source('AI', "gobang.py").AI(15, 1, 5)
 		agent.go(np.copy(board))
 		print(agent.candidate_list[-1])
+	if unit == 8:
+		board = np.zeros((15, 15), dtype=np.int)
+		agent = imp.load_source('AI', "main.py").AI(15, -1, 5)
+		agent.go(np.copy(board))
+		print(agent.candidate_list[-1])
 
 
 if __name__ == '__main__':
-	test(7)
+	test(8)
